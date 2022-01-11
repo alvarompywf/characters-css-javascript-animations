@@ -1,4 +1,22 @@
-.animacion{
+.gokuSS {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
 
-    
+    height: 95px;
+    width: calc(824px/14);
+    background: url(assets/gokuSS.gif);
+    animation: tranformacionGoku 1s steps(14) infinite;
+}
+
+@keyframes tranformacionGoku {
+
+    from {
+
+        background-position: 0;
+    }
+
+    to {
+        background-position: 824px;
+    }
 }
