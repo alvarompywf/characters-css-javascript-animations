@@ -1,15 +1,15 @@
-.gokuSS {
+.minotauro {
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
 
-    height: 95px;
-    width: calc(824px/14);
-    background: url(assets/recorte1.1.png);
-    animation: tranformacionGoku 1s steps(14) infinite;
+    height: 70px;
+    width: calc(854px/9);
+    background: url(assets/Minotaur\ -\ Sprite\ Sheet.png);
+    animation: movimiento1 1s steps(9) infinite;
 }
 
-@keyframes tranformacionGoku {
+@keyframes movimiento1 {
 
     from {
 
@@ -17,6 +17,6 @@
     }
 
     to {
-        background-position: 824px;
+        background-position: -859px;
     }
 }
