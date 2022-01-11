@@ -6,10 +6,10 @@
     height: 70px;
     width: calc(854px/9);
     background: url(assets/Minotaur\ -\ Sprite\ Sheet.png);
-    animation: movimiento1 1s steps(9) infinite;
+    animation: movimientoMinotauro 1s steps(9) infinite;
 }
 
-@keyframes movimiento1 {
+@keyframes movimientoMinotauro {
 
     from {
 
@@ -17,6 +17,34 @@
     }
 
     to {
-        background-position: -859px;
+
+        background-position: -865px;
+    
+    }
+}
+
+
+.gokuSS {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+
+    height: 95px;
+    width: calc(824px/14);
+    background: url(assets/recorte1.1.png);
+    animation: movimientoGoku 1s steps(14) infinite;
+}
+
+@keyframes movimientoGoku {
+
+    from {
+
+        background-position: 0;
+    }
+
+    to {
+
+        background-position: -828px;
+    
     }
 }
