@@ -24,15 +24,15 @@
 }
 
 
-.gokuSS {
+/*.gokuSS {
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
 
-    height: 95px;
-    width: calc(824px/14);
-    background: url(assets/recorte1.1.png);
-    animation: movimientoGoku 1s steps(14) infinite;
+    height: 231px;
+    width: calc(1499px/12);
+    background: url(assets/prueba.jpg);
+    animation: movimientoGoku 1s steps(12) infinite;
 }
 
 @keyframes movimientoGoku {
@@ -44,7 +44,7 @@
 
     to {
 
-        background-position: -828px;
+        background-position: -1550px;
     
     }
 }
