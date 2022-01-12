@@ -1,15 +1,98 @@
-.minotauro {
+/************** MEDIEVAL WARRIOR *************/
+
+.MedievalWarriorParado {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+
+    height: 137px;
+    width: calc(1104px/6);
+    background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
+    animation: MedievalWarriorANDAR 0.7s steps(6) infinite;
+}
+
+@keyframes MedievalWarriorANDAR {
+
+    from {
+
+        background-position: 0;
+    }
+
+    to {
+
+        background-position: 1104px;
+
+    }
+}
+
+.MedievalWarriorCorriendo {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+
+    height: 137px;
+    width: calc(1472px/8);
+    background: url(assets/Medieval_Warrior/MedievalWarrior_CORRER.png);
+    animation: MedievalWarriorCorriendo 0.7s steps(8) infinite;
+}
+
+@keyframes MedievalWarriorCorriendo {
+
+    from {
+
+        background-position: 0;
+    }
+
+    to {
+
+        background-position: 1472px;
+
+    }
+}
+
+.MedievalWarriorAtacando {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+
+    height: 137px;
+    width: calc(736px/4);
+    background: url(assets/Medieval_Warrior/MedievalWarrior_ATACAR.png);
+    animation: MedievalWarriorAtacando 0.7s steps(4) infinite;
+}
+
+@keyframes MedievalWarriorAtacando {
+
+    from {
+
+        background-position: 0;
+    }
+
+    to {
+
+        background-position: 736px;
+
+    }
+}
+
+
+/************** MINOTAURO *************/
+
+
+
+.minotauroAtacando {
+    margin-left: 3%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
 
     height: 70px;
     width: calc(854px/9);
-    background: url(assets/Minotaur\ -\ Sprite\ Sheet.png);
-    animation: movimientoMinotauro 1s steps(9) infinite;
+    background: url(assets/Minotauro/MinotaurO_ATACAR.png);
+    animation: MinoTauroAtacando 1s steps(9) infinite;
 }
 
-@keyframes movimientoMinotauro {
+@keyframes MinoTauroAtacando {
 
     from {
 
@@ -19,23 +102,23 @@
     to {
 
         background-position: -865px;
-    
+
     }
 }
 
-
-/*.gokuSS {
+.minotauroCorriendo {
+    margin-left: 4%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
 
-    height: 231px;
-    width: calc(1499px/12);
-    background: url(assets/prueba.jpg);
-    animation: movimientoGoku 1s steps(12) infinite;
+    height: 70px;
+    width: calc(474px/5);
+    background: url(assets/Minotauro/Minotauro_ANDAR.png);
+    animation: minoTauroCorriendo 0.5s steps(5) infinite;
 }
 
-@keyframes movimientoGoku {
+@keyframes minoTauroCorriendo {
 
     from {
 
@@ -44,7 +127,34 @@
 
     to {
 
-        background-position: -1550px;
-    
+        background-position: -480px;
+
+    }
+}
+
+
+.minotauroParado {
+    margin-left: 4%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+
+    height: 67px;
+    width: calc(474px/5);
+    background: url(assets/Minotauro/Minotauro_PARADO.png);
+    animation: MinotauroParado 0.7s steps(5) infinite;
+}
+
+@keyframes MinotauroParado {
+
+    from {
+
+        background-position: 0;
+    }
+
+    to {
+
+        background-position: -480px;
+
     }
 }
