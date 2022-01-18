@@ -157,3 +157,27 @@
     }
 }
 
+<<<<<<< Updated upstream
+=======
+.tituloImagen1 {
+    display: flex;
+    float: left;
+    /* margin-left: 150px; */
+}
+
+.tituloImagen2 {
+    margin-top: -2%;
+    float: right;
+
+}
+
+.tituloTexto {
+
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer{
+
+
+}
+>>>>>>> Stashed changes
