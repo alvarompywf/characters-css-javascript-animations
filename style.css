@@ -171,6 +171,7 @@
 .tituloImagen1 {
     display: flex;
     float: left;
+    
 
 }
 
@@ -185,7 +186,13 @@
 
         text-align: center;
         font-family: Letratop;
+        font-size: 60px;
     
 }
 
-.footer {}
+.footer {
+
+}
+
+
+
