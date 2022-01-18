@@ -1,7 +1,7 @@
 
 document.addEventListener("keydown", pulsarTecla);
-document.addEventListener("keyup", soltarTecla);
 
+document.addEventListener("keyup", soltarTecla);
 
 // ATACA AL SPACIO
 
@@ -38,6 +38,7 @@ function soltarTecla(event) {
     }
 
     if (event.keyCode === 39) {
+        
         let divGuerrero = document.querySelector(".MedievalWarriorCorriendo");
         divGuerrero.removeAttribute("class");
         divGuerrero.classList.add("MedievalWarriorParado");
