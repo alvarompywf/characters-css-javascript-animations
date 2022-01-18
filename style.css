@@ -2,12 +2,14 @@
 
 /************** MEDIEVAL WARRIOR *************/
 /* https://www.freesoundeffects.com/cat/impacts-181/ */
-@font-face{
+@font-face {
     font-family: Letratop;
     src: url(LetraMedieval.ttf);
 }
+
 .MedievalWarriorParado {
     margin-top: 10%;
+    zoom: 180%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -27,13 +29,14 @@
 
     to {
 
-        background-position: 1104px;
+        background-position: -1104px;
 
     }
 }
 
 .MedievalWarriorCorriendo {
     margin-top: 10%;
+    zoom: 180%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -52,13 +55,14 @@
 
     to {
 
-        background-position: 1472px;
+        background-position: -1472px;
 
     }
 }
 
 .MedievalWarriorAtacando {
     margin-top: 10%;
+    zoom: 180%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -87,7 +91,8 @@
 
 .minotauroAtacando {
     margin-left: 40%;
-    
+    zoom: 180%;
+
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -112,7 +117,7 @@
 }
 
 .minotauroCorriendo {
-
+    zoom: 180%;
     margin-left: 40%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
@@ -140,7 +145,7 @@
 
 
 .minotauroParado {
-
+    zoom: 180%;
     margin-left: 40%;
     margin-top: -6%;
     filter: brightness(1.1);
@@ -171,7 +176,7 @@
 .tituloImagen1 {
     display: flex;
     float: left;
-    
+
 
 }
 
@@ -182,17 +187,12 @@
 }
 
 .tituloTexto {
-    
 
-        text-align: center;
-        font-family: Letratop;
-        font-size: 60px;
-    
-}
 
-.footer {
+    text-align: center;
+    font-family: Letratop;
+    font-size: 60px;
 
 }
 
-
-
+.footer {}
