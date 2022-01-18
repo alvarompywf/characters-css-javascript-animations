@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 /************** MEDIEVAL WARRIOR *************/
 /* https://www.freesoundeffects.com/cat/impacts-181/ */
+@font-face{
+    font-family: Letratop;
+    src: url(LetraMedieval.ttf);
+}
 .MedievalWarriorParado {
+    margin-top: 10%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -27,10 +33,10 @@
 }
 
 .MedievalWarriorCorriendo {
+    margin-top: 10%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
-
     height: 137px;
     width: calc(1472px/8);
     background: url(assets/Medieval_Warrior/MedievalWarrior_CORRER.png);
@@ -52,6 +58,7 @@
 }
 
 .MedievalWarriorAtacando {
+    margin-top: 10%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -79,11 +86,11 @@
 /************** MINOTAURO *************/
 
 .minotauroAtacando {
-    margin-left: 3%;
+    margin-left: 40%;
+    
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
-
     height: 70px;
     width: calc(854px/9);
     background: url(assets/Minotauro/MinotaurO_ATACAR.png);
@@ -105,7 +112,8 @@
 }
 
 .minotauroCorriendo {
-    margin-left: 4%;
+
+    margin-left: 40%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -132,7 +140,9 @@
 
 
 .minotauroParado {
-    margin-left: 4%;
+
+    margin-left: 40%;
+    margin-top: -6%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -157,27 +167,25 @@
     }
 }
 
-<<<<<<< Updated upstream
-=======
+
 .tituloImagen1 {
     display: flex;
     float: left;
-    /* margin-left: 150px; */
+
 }
 
 .tituloImagen2 {
-    margin-top: -2%;
+
     float: right;
 
 }
 
 .tituloTexto {
+    
 
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        font-family: Letratop;
+    
 }
-.footer{
 
-
-}
->>>>>>> Stashed changes
+.footer {}
