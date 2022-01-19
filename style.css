@@ -12,9 +12,9 @@
 }
 
 .cartaMedieval {
-    
+
     height: 440px;
-    width: 400px;
+    width: 300px;
     background-color: cornflowerblue;
     color: rgb(255, 255, 255);
     border-radius: 10%;
@@ -24,7 +24,7 @@
 }
 
 .textoGuerrero {
-    
+
     text-align: center;
     background-color: white;
 
@@ -32,7 +32,7 @@
 
 .botonGuerrero {
     height: 30px;
-    width: 400px;
+    width: 300px;
     background-color: rgb(122, 114, 40);
     color: rgb(255, 255, 255);
 
@@ -44,12 +44,12 @@
 }
 
 .MedievalWarriorParado {
-
-    margin: auto;
     zoom: 180%;
-    position: relative;
     height: 137px;
     width: calc(1104px/6);
+    max-width: calc(1104px/6);
+    max-height: 137px;
+
     background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
     animation: MedievalWarriorANDAR 0.7s steps(6) infinite;
 }
@@ -68,13 +68,26 @@
     }
 }
 
+.MedievalWarriorEstatico {
+    zoom: 180%;
+    height: 137px;
+    width: calc(1104px/6);
+    max-width: calc(1104px/6);
+    max-height: 137px;
+
+    background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
+    animation: MedievalWarriorANDAR 0.7s steps(6) infinite;
+}
+
+
 .MedievalWarriorCorriendo {
     margin: auto;
     zoom: 180%;
     position: relative;
-
     height: 137px;
+    max-height: 137px;
     width: calc(1472px/8);
+    max-width: calc(1472px/8);
     background: url(assets/Medieval_Warrior/MedievalWarrior_CORRER.png);
     animation: MedievalWarriorCorriendo 0.7s steps(8) infinite;
 }
@@ -97,9 +110,10 @@
     margin: auto;
     zoom: 180%;
     position: relative;
-
     height: 137px;
+    max-height: 137px;
     width: calc(736px/4);
+    max-width: calc(736px/4);
     background: url(assets/Medieval_Warrior/MedievalWarrior_ATACAR.png);
     animation: MedievalWarriorAtacando 0.7s steps(4) infinite;
 }
@@ -177,12 +191,12 @@
 
 .minotauroParado {
     zoom: 180%;
-    margin-left: 40%;
-    margin-top: -6%;
+
+    margin-left: 75%;
+    margin-top: -13%;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
-
     height: 67px;
     width: calc(474px/5);
     background: url(assets/Minotauro/Minotauro_PARADO.png);
@@ -219,9 +233,19 @@
 
 .tituloTexto {
 
-
     text-align: center;
     font-family: Letratop;
     font-size: 60px;
 
+}
+
+#vistaPrevia {
+
+    height: 289px;
+    width: 300px;
+    background-color: rgb(175, 154, 127);
+    margin: 0 auto;
+    margin-top: -32.4%;
+    border-radius: 10%;
+    text-align: center;
 }
