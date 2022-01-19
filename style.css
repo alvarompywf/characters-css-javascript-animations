@@ -7,13 +7,47 @@
     src: url(LetraMedieval.ttf);
 }
 
-.MedievalWarriorParado {
-    margin-top: 10%;
-    zoom: 180%;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    position: relative;
+* {
+    font-family: Letratop;
+}
 
+.cartaMedieval {
+    
+    height: 440px;
+    width: 400px;
+    background-color: cornflowerblue;
+    color: rgb(255, 255, 255);
+    border-radius: 10%;
+    margin-left: 10%;
+    margin-top: 10%;
+
+}
+
+.textoGuerrero {
+    
+    text-align: center;
+    background-color: white;
+
+}
+
+.botonGuerrero {
+    height: 30px;
+    width: 400px;
+    background-color: rgb(122, 114, 40);
+    color: rgb(255, 255, 255);
+
+}
+
+.cartaMedieval:hover {
+    background-color: rgb(54, 103, 194);
+    color: rgb(54, 103, 194);
+}
+
+.MedievalWarriorParado {
+
+    margin: auto;
+    zoom: 180%;
+    position: relative;
     height: 137px;
     width: calc(1104px/6);
     background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
@@ -35,11 +69,10 @@
 }
 
 .MedievalWarriorCorriendo {
-    margin-top: 10%;
+    margin: auto;
     zoom: 180%;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
     position: relative;
+
     height: 137px;
     width: calc(1472px/8);
     background: url(assets/Medieval_Warrior/MedievalWarrior_CORRER.png);
@@ -61,10 +94,8 @@
 }
 
 .MedievalWarriorAtacando {
-    margin-top: 10%;
+    margin: auto;
     zoom: 180%;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
     position: relative;
 
     height: 137px;
@@ -172,7 +203,7 @@
     }
 }
 
-
+/* FOOTER */
 .tituloImagen1 {
     display: flex;
     float: left;
@@ -194,5 +225,3 @@
     font-size: 60px;
 
 }
-
-.footer {}
