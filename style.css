@@ -35,7 +35,13 @@
     width: 300px;
     background-color: rgb(122, 114, 40);
     color: rgb(255, 255, 255);
+transition: 1s;
+}
 
+.botonGuerrero:hover {
+    font-size: 180%;
+    bottom-width: 10cm;
+    transition: 1s;
 }
 
 .cartaMedieval:hover {
@@ -67,6 +73,7 @@
 
     }
 }
+
 
 .MedievalWarriorEstatico {
     zoom: 180%;
