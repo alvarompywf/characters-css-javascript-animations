@@ -3,6 +3,9 @@ document.addEventListener("keydown", pulsarTecla);
 
 document.addEventListener("keyup", soltarTecla);
 
+var medievalSonidoAtacar = new Audio('assets/Medieval_Warrior/sword.wav');
+var medievalSonidoAndar = new Audio('assets/Medieval_Warrior/walking.wav');
+
 // ATACA AL SPACIO
 
 function pulsarTecla(event) {
@@ -13,6 +16,10 @@ function pulsarTecla(event) {
         let divGuerrero = document.querySelector(".MedievalWarriorParado");
         divGuerrero.removeAttribute("class");
         divGuerrero.classList.add("MedievalWarriorAtacando");
+        medievalSonidoAtacar.loop = true;
+        medievalSonidoAtacar.play();
+
+
 
     }
 
@@ -21,7 +28,8 @@ function pulsarTecla(event) {
         let divGuerrero = document.querySelector(".MedievalWarriorParado");
         divGuerrero.removeAttribute("class");
         divGuerrero.classList.add("MedievalWarriorCorriendo");
-
+        medievalSonidoAndar.loop = true;
+        medievalSonidoAndar.play();
     }
 
 
@@ -35,14 +43,17 @@ function soltarTecla(event) {
         let divGuerrero = document.querySelector(".MedievalWarriorAtacando");
         divGuerrero.removeAttribute("class");
         divGuerrero.classList.add("MedievalWarriorParado");
+        medievalSonidoAtacar.loop = false;
+        medievalSonidoAtacar.pause();
     }
 
     if (event.keyCode === 39) {
-        
+
         let divGuerrero = document.querySelector(".MedievalWarriorCorriendo");
         divGuerrero.removeAttribute("class");
         divGuerrero.classList.add("MedievalWarriorParado");
-
+        medievalSonidoAndar.loop = false;
+        medievalSonidoAndar.pause();
     }
 }
 

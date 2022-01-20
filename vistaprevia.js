@@ -1,6 +1,4 @@
 
-
-
 function pulsado1() {
 
     let cartaVP = document.querySelector("#vistaPrevia");
