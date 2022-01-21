@@ -25,8 +25,6 @@ function pulsarTecla(event) {
         divGuerrero.removeAttribute("class");
         divGuerrero.classList.add("MedievalWarriorCorriendo");
 
-
-
         medievalSonidoAndar.loop = true;
         medievalSonidoAndar.play();
     }

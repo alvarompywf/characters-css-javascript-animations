@@ -86,6 +86,7 @@
     background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
     animation: MedievalWarriorANDAR 0.7s steps(1) none;
 }
+
 .MedievalWarriorEstatico:hover {
     zoom: 180%;
     height: 137px;
@@ -218,6 +219,7 @@
     background: url(assets/Minotauro/Minotauro_PARADO.png);
     animation: MinotauroParado 0.7s steps(5) none;
 }
+
 .minotauroParado:hover {
     zoom: 180%;
 
@@ -272,4 +274,9 @@
     background-color: rgb(218, 197, 171);
     border-radius: 10%;
     text-align: center;
+}
+
+#mana::-webkit-progress-value {
+    background: rgb(211, 130, 130);
+    bottom: 100px;
 }
