@@ -11,20 +11,23 @@
     font-family: Letratop;
 }
 
-.cartaMedieval {
+.persanajes {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
 
+.cartaMedieval {
+    margin-bottom: 10%;
     height: 440px;
     width: 300px;
-    background-color: cornflowerblue;
+    background-color: rgb(157, 179, 219);
     color: rgb(255, 255, 255);
     border-radius: 10%;
-    margin-left: 10%;
-    margin-top: 10%;
-
 }
 
 .textoGuerrero {
-
+    font-size: 15px;
     text-align: center;
     background-color: white;
 
@@ -35,7 +38,13 @@
     width: 300px;
     background-color: rgb(122, 114, 40);
     color: rgb(255, 255, 255);
+    transition: 1s;
+}
 
+.botonGuerrero:hover {
+    font-size: 180%;
+    bottom-width: 10cm;
+    transition: 1s;
 }
 
 .cartaMedieval:hover {
@@ -49,7 +58,6 @@
     width: calc(1104px/6);
     max-width: calc(1104px/6);
     max-height: 137px;
-
     background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
     animation: MedievalWarriorANDAR 0.7s steps(6) infinite;
 }
@@ -68,20 +76,30 @@
     }
 }
 
+
 .MedievalWarriorEstatico {
     zoom: 180%;
     height: 137px;
     width: calc(1104px/6);
     max-width: calc(1104px/6);
     max-height: 137px;
+    background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
+    animation: MedievalWarriorANDAR 0.7s steps(1) none;
+}
 
+.MedievalWarriorEstatico:hover {
+    zoom: 180%;
+    height: 137px;
+    width: calc(1104px/6);
+    max-width: calc(1104px/6);
+    max-height: 137px;
     background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
     animation: MedievalWarriorANDAR 0.7s steps(6) infinite;
 }
 
 
 .MedievalWarriorCorriendo {
-    margin: auto;
+
     zoom: 180%;
     position: relative;
     height: 137px;
@@ -107,7 +125,7 @@
 }
 
 .MedievalWarriorAtacando {
-    margin: auto;
+
     zoom: 180%;
     position: relative;
     height: 137px;
@@ -135,7 +153,7 @@
 /************** MINOTAURO *************/
 
 .minotauroAtacando {
-    margin-left: 40%;
+
     zoom: 180%;
 
     filter: brightness(1.1);
@@ -163,7 +181,7 @@
 
 .minotauroCorriendo {
     zoom: 180%;
-    margin-left: 40%;
+
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -192,8 +210,20 @@
 .minotauroParado {
     zoom: 180%;
 
-    margin-left: 75%;
-    margin-top: -13%;
+
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+    height: 67px;
+    width: calc(474px/5);
+    background: url(assets/Minotauro/Minotauro_PARADO.png);
+    animation: MinotauroParado 0.7s steps(5) none;
+}
+
+.minotauroParado:hover {
+    zoom: 180%;
+
+
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -236,17 +266,17 @@
     text-align: center;
     font-family: Letratop;
     font-size: 60px;
-
 }
 
 #vistaPrevia {
 
-    height: 289px;
     width: 300px;
-    background-color: rgb(175, 154, 127);
-    margin: 0 auto;
-    margin-top: -32.4%;
+    background-color: rgb(218, 197, 171);
     border-radius: 10%;
     text-align: center;
 }
 
+#mana::-webkit-progress-value {
+    background: rgb(211, 130, 130);
+    bottom: 100px;
+}
