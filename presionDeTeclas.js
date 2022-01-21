@@ -47,5 +47,6 @@ function soltarTecla(event) {
 }
 
 
+
 window.onload = pulsarTecla;
 window.onload = soltarTecla;
