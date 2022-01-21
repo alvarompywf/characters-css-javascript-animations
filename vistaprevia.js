@@ -12,18 +12,15 @@ function pulsado1() {
     let boton = document.createElement("button");
     boton.id = "botonVP";
     boton.addEventListener("click", gritar);
-    let textoBoton = document.createTextNode("GRITO")
+    let textoBoton = document.createTextNode("🔊")
 
     boton.appendChild(textoBoton);
     cartaVP.appendChild(boton);
 
 }
 
-
 function gritar() {
-
     gritoMedieval.play();
-
 }
 
 function resetPage() {
