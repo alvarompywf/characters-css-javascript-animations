@@ -18,14 +18,12 @@
 }
 
 .cartaMedieval {
-
+    margin-bottom: 10%;
     height: 440px;
     width: 300px;
     background-color: cornflowerblue;
     color: rgb(255, 255, 255);
     border-radius: 10%;
-
-
 }
 
 .textoGuerrero {
@@ -80,6 +78,15 @@
 
 
 .MedievalWarriorEstatico {
+    zoom: 180%;
+    height: 137px;
+    width: calc(1104px/6);
+    max-width: calc(1104px/6);
+    max-height: 137px;
+    background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
+    animation: MedievalWarriorANDAR 0.7s steps(6) none;
+}
+.MedievalWarriorEstatico:hover {
     zoom: 180%;
     height: 137px;
     width: calc(1104px/6);
@@ -209,6 +216,18 @@
     height: 67px;
     width: calc(474px/5);
     background: url(assets/Minotauro/Minotauro_PARADO.png);
+    animation: MinotauroParado 0.7s steps(5) none;
+}
+.minotauroParado:hover {
+    zoom: 180%;
+
+
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+    height: 67px;
+    width: calc(474px/5);
+    background: url(assets/Minotauro/Minotauro_PARADO.png);
     animation: MinotauroParado 0.7s steps(5) infinite;
 }
 
@@ -245,14 +264,12 @@
     text-align: center;
     font-family: Letratop;
     font-size: 60px;
-
 }
 
 #vistaPrevia {
 
-    height: 289px;
     width: 300px;
-    background-color: rgb(175, 154, 127);
+    background-color: rgb(218, 197, 171);
     border-radius: 10%;
     text-align: center;
 }
