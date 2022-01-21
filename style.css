@@ -11,6 +11,12 @@
     font-family: Letratop;
 }
 
+.persanajes {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
 .cartaMedieval {
 
     height: 440px;
@@ -18,13 +24,12 @@
     background-color: cornflowerblue;
     color: rgb(255, 255, 255);
     border-radius: 10%;
-    margin-left: 10%;
-    margin-top: 10%;
+
 
 }
 
 .textoGuerrero {
-
+    font-size: 15px;
     text-align: center;
     background-color: white;
 
@@ -35,7 +40,7 @@
     width: 300px;
     background-color: rgb(122, 114, 40);
     color: rgb(255, 255, 255);
-transition: 1s;
+    transition: 1s;
 }
 
 .botonGuerrero:hover {
@@ -55,7 +60,6 @@ transition: 1s;
     width: calc(1104px/6);
     max-width: calc(1104px/6);
     max-height: 137px;
-
     background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
     animation: MedievalWarriorANDAR 0.7s steps(6) infinite;
 }
@@ -81,14 +85,13 @@ transition: 1s;
     width: calc(1104px/6);
     max-width: calc(1104px/6);
     max-height: 137px;
-
     background: url(assets/Medieval_Warrior/MedievalWarrior_PARADO.png);
     animation: MedievalWarriorANDAR 0.7s steps(6) infinite;
 }
 
 
 .MedievalWarriorCorriendo {
-    margin: auto;
+
     zoom: 180%;
     position: relative;
     height: 137px;
@@ -114,7 +117,7 @@ transition: 1s;
 }
 
 .MedievalWarriorAtacando {
-    margin: auto;
+
     zoom: 180%;
     position: relative;
     height: 137px;
@@ -142,7 +145,7 @@ transition: 1s;
 /************** MINOTAURO *************/
 
 .minotauroAtacando {
-    margin-left: 40%;
+
     zoom: 180%;
 
     filter: brightness(1.1);
@@ -170,7 +173,7 @@ transition: 1s;
 
 .minotauroCorriendo {
     zoom: 180%;
-    margin-left: 40%;
+
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -199,8 +202,7 @@ transition: 1s;
 .minotauroParado {
     zoom: 180%;
 
-    margin-left: 75%;
-    margin-top: -13%;
+
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: relative;
@@ -251,8 +253,6 @@ transition: 1s;
     height: 289px;
     width: 300px;
     background-color: rgb(175, 154, 127);
-    margin: 0 auto;
-    margin-top: -32.4%;
     border-radius: 10%;
     text-align: center;
 }
