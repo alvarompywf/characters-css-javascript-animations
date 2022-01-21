@@ -272,11 +272,89 @@
 
     width: 300px;
     background-color: rgb(218, 197, 171);
-    border-radius: 10%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
     text-align: center;
 }
 
-#mana::-webkit-progress-value {
-    background: rgb(211, 130, 130);
-    bottom: 100px;
+#stacks {
+
+    margin: auto;
+    margin-right: 25%;
+    background-color: rgb(155, 126, 91);
+   
+    text-align: center;
 }
+
+/* VIDA Y MANA */
+
+
+
+.vida {
+
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(173, 168, 226);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgb(112, 111, 111);
+
+}
+
+.vida::after {
+
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgb(41, 67, 212);
+    /* box-shadow: 0 0 0px rgb(255, 255, 255); */
+    border-radius: 45%;
+    animation: rotate 3s linear forwards infinite;
+
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mana {
+
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(173, 168, 226);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgb(112, 111, 111);
+
+}
+
+.mana::after {
+
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgb(212, 41, 41);
+    /* box-shadow: 0 0 0px rgb(255, 255, 255); */
+    border-radius: 45%;
+    animation: rotate 3s linear forwards infinite;
+
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
