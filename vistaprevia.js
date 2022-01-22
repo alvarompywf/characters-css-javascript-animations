@@ -1,6 +1,8 @@
 
 var gritoMedieval = new Audio('assets/Medieval_Warrior/grito.wav');
 
+
+
 function pulsado1() {
 
     resetPage();
@@ -23,7 +25,7 @@ function pulsado1() {
     barraDeVida();
     mana();
 }
-// <progress id="file" max="100" value="70"> </progress>
+
 function gritar() {
     gritoMedieval.play();
 }
@@ -52,3 +54,11 @@ function resetPage() {
 
     }
 }
+
+function asignarBoton() {
+
+    let BotonGuerrero = document.querySelector(".botonGuerrero");
+    BotonGuerrero.addEventListener("click", pulsado1);
+}
+
+window.onload = asignarBoton();

@@ -13,11 +13,12 @@
 
 .persanajes {
     margin-top: 10%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 5%;
+
 }
 
 .cartaMedieval {
+    margin: auto;
     margin-bottom: 10%;
     height: 440px;
     width: 300px;
@@ -266,32 +267,32 @@
     text-align: center;
     font-family: Letratop;
     font-size: 60px;
+
 }
 
 #vistaPrevia {
-
-    width: 300px;
+    margin: auto;
+    max-height: 440px;
+    max-width: 300px;
     background-color: rgb(218, 197, 171);
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
     text-align: center;
+
 }
 
 #stacks {
-
-    margin: auto;
-    margin-right: 25%;
-    background-color: rgb(155, 126, 91);
-   
     text-align: center;
+    margin: auto;
+    max-height: 250px;
+    max-width: 250px;
+    
+
 }
 
 /* VIDA Y MANA */
 
-
-
 .vida {
-
     margin: auto;
     width: 30px;
     height: 30px;
@@ -299,7 +300,7 @@
     background-color: rgb(173, 168, 226);
     position: relative;
     overflow: hidden;
-    border: 2px solid rgb(112, 111, 111);
+    border: 2px solid rgb(0, 0, 0);
 
 }
 
@@ -312,7 +313,6 @@
     width: 200%;
     height: 200%;
     background: rgb(41, 67, 212);
-    /* box-shadow: 0 0 0px rgb(255, 255, 255); */
     border-radius: 45%;
     animation: rotate 3s linear forwards infinite;
 
@@ -333,7 +333,7 @@
     background-color: rgb(173, 168, 226);
     position: relative;
     overflow: hidden;
-    border: 2px solid rgb(112, 111, 111);
+    border: 2px solid rgb(0, 0, 0);
 
 }
 
@@ -353,8 +353,9 @@
 }
 
 @keyframes rotate {
+
     to {
         transform: rotate(360deg);
     }
-}
 
+}
