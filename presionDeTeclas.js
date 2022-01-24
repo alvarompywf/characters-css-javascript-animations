@@ -41,6 +41,7 @@ function soltarTecla(event) {
     }
 
     if (event.keyCode === 39) {
+
         let divGuerrero = document.querySelector(".MedievalWarriorCorriendo");
         divGuerrero.removeAttribute("class");
         divGuerrero.classList.add("MedievalWarriorParado");
