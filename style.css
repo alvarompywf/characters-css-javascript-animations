@@ -18,6 +18,7 @@
 }
 
 .cartaMedieval {
+
     margin: auto;
     margin-bottom: 10%;
     height: 440px;
@@ -53,6 +54,7 @@
 }
 
 .MedievalWarriorParado {
+    
     zoom: 180%;
     height: 137px;
     width: calc(1104px/6);
