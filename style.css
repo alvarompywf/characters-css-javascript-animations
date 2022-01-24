@@ -152,12 +152,45 @@
 
 /************** MINOTAURO *************/
 
+
+.cartaMinotauro {
+
+    height: 440px;
+    width: 300px;
+    background-color: rgb(157, 179, 219);;
+    color: rgb(255, 255, 255);
+    border-radius: 10%;
+    margin-left: 50%;
+    margin-top: 0%;
+
+}
+
+.textoMinotauro {
+
+    text-align: center;
+    background-color: white;
+
+}
+
+.botonMinotauro {
+    
+    height: 30px;
+    width: 300px;
+    background-color: rgb(122, 114, 40);
+    color: rgb(255, 255, 255);
+
+}
+
+.cartaMinotauro:hover {
+    background-color: rgb(54, 103, 194);
+    color: rgb(54, 103, 194);
+}
+
 .minotauroAtacando {
 
     zoom: 180%;
 
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
+   
     position: relative;
     height: 70px;
     width: calc(854px/9);
@@ -182,8 +215,7 @@
 .minotauroCorriendo {
     zoom: 180%;
 
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
+  
     position: relative;
 
     height: 70px;
@@ -206,13 +238,16 @@
     }
 }
 
+ .espacio{
+
+    
+    height: 100px;
+
+ } 
 
 .minotauroParado {
     zoom: 180%;
-
-
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
+    margin-left: 30%;
     position: relative;
     height: 67px;
     width: calc(474px/5);
@@ -224,8 +259,7 @@
     zoom: 180%;
 
 
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
+    
     position: relative;
     height: 67px;
     width: calc(474px/5);
@@ -246,6 +280,28 @@
 
     }
 }
+
+
+.minotauroEstatico {
+    zoom: 180%;
+    margin-left: 30%;
+    position: relative;
+    height: 67px;
+    width: calc(474px/5);
+    background: url(assets/Minotauro/Minotauro_PARADO.png);
+    animation: MinotauroParado 0.7s steps(1) none;
+}
+
+.minotauroEstatico:hover {
+    zoom: 180%;
+    margin-left: 30%;
+    position: relative;
+    height: 67px;
+    width: calc(474px/5);
+    background: url(assets/Minotauro/Minotauro_PARADO.png);
+    animation: MinotauroParado 0.7s steps(5) none;
+}
+
 
 /* FOOTER */
 .tituloImagen1 {

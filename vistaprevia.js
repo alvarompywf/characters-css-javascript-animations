@@ -1,8 +1,6 @@
 
 var gritoMedieval = new Audio('assets/Medieval_Warrior/grito.wav');
 
-
-
 function pulsado1() {
 
     resetPage();
@@ -59,6 +57,14 @@ function asignarBoton() {
 
     let BotonGuerrero = document.querySelector(".botonGuerrero");
     BotonGuerrero.addEventListener("click", pulsado1);
+}
+
+function pulsado2() {
+
+    let cartaVP2 = document.querySelector("#vistaPrevia");
+    cartaVP2.classList.remove();
+    cartaVP2.classList.add("minotauroEstatico");
+
 }
 
 window.onload = asignarBoton();
