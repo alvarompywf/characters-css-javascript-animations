@@ -157,10 +157,10 @@
 
 .cartaMinotauro {
 
+    padding-top: 120%;
     height: 440px;
     width: 300px;
     background-color: rgb(157, 179, 219);
-    ;
     color: rgb(255, 255, 255);
     border-radius: 10%;
     margin-left: 50%;
@@ -169,7 +169,7 @@
 }
 
 .textoMinotauro {
-
+margin-top: -30%;
     text-align: center;
     background-color: white;
 
@@ -184,6 +184,7 @@
     transition: 1s;
 
 }
+
 .botonMinotauro:hover {
 
     font-size: 180%;
@@ -197,8 +198,8 @@
 }
 
 .minotauroAtacando {
-
-    zoom: 360%;
+    
+    zoom: 300%;
     position: relative;
     height: 70px;
     width: calc(854px/9);
@@ -221,7 +222,7 @@
 }
 
 .minotauroCorriendo {
-    zoom: 360%;
+    zoom: 300%;
     position: relative;
 
     height: 70px;
@@ -252,8 +253,8 @@
 }
 
 .minotauroParado {
-
-    zoom: 360%;
+    
+    zoom: 300%;
     position: relative;
     height: 67px;
     width: calc(474px/5);
@@ -281,6 +282,7 @@
 .minotauroEstatico {
     zoom: 180%;
     margin-left: 30%;
+    
     position: relative;
     height: 67px;
     width: calc(474px/5);
@@ -322,7 +324,7 @@
 }
 
 #vistaPrevia {
-
+    
     margin: auto;
     padding-left: 10%;
     padding-right: 10%;
@@ -347,6 +349,7 @@
 /* VIDA Y MANA */
 
 .vida {
+    position: fixed;
     margin: auto;
     width: 30px;
     height: 30px;
@@ -359,7 +362,7 @@
 }
 
 .vida::after {
-
+    
     content: "";
     position: absolute;
     top: 50%;

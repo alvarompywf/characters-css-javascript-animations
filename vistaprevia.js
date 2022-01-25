@@ -47,11 +47,11 @@ function pulsado2() {
     resetPage();
 
     let cartaVP2 = document.querySelector("#vistaPrevia");
-    console.log(cartaVP2)
-    cartaVP2.class = "";
-    console.log(cartaVP2)
+    
+    cartaVP2.classList.value = "";
+    
     cartaVP2.classList.add("minotauroParado");
-    console.log(cartaVP2)
+    
 
     let boton = document.createElement("button");
     boton.id = "botonVP";
