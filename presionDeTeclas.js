@@ -63,13 +63,13 @@ function soltarTecla(event) {
 
 function pulsarTecla2(event) {
 
-    if (event.keyCode === 38) {
+    if (event.keyCode === 37) {
         let divMinotauro = document.querySelector(".minotauroParado");
         divMinotauro.removeAttribute("class");
         divMinotauro.classList.add("minotauroCorriendo");
     }
 
-    if (event.keyCode === 13) {
+    if (event.keyCode === 40) {
         
         let divMinotauro = document.querySelector(".minotauroParado");
         divMinotauro.removeAttribute("class");
@@ -79,13 +79,13 @@ function pulsarTecla2(event) {
 
 function soltarTecla2(event) {
 
-    if (event.keyCode === 38) {
+    if (event.keyCode === 37) {
         let divMinotauro = document.querySelector(".minotauroCorriendo");
         divMinotauro.removeAttribute("class");
         divMinotauro.classList.add("minotauroParado");
     }
 
-    if (event.keyCode === 13) {
+    if (event.keyCode === 40) {
         let divMinotauro = document.querySelector(".minotauroAtacando");
         divMinotauro.removeAttribute("class");
         divMinotauro.classList.add("minotauroParado");
