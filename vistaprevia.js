@@ -2,7 +2,7 @@
 var gritoMedieval = new Audio('assets/Medieval_Warrior/grito.wav');
 var gritoMinotauro = new Audio('assets/Minotauro/minotauroGrunido.wav');
 
-
+alert("pulsa el boton 'probar personaje' para probarlo")
 function pulsado1() {
 
     resetPage();
