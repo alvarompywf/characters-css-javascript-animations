@@ -95,6 +95,7 @@ function soltarTecla2(event) {
         divMinotauro.classList.add("minotauroParado");
 
         minotauroSonidoCorriendo.loop = false;
+        minotauroSonidoCorriendo.currentTime = 0;
         minotauroSonidoCorriendo.pause();
     }
 
@@ -104,6 +105,7 @@ function soltarTecla2(event) {
         divMinotauro.classList.add("minotauroParado");
 
         minotauroSonidoAtacar.loop = false;
+        minotauroSonidoAtacar.currentTime = 0;
         minotauroSonidoAtacar.pause();
     }
 }
