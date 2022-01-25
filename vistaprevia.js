@@ -1,6 +1,6 @@
 
 var gritoMedieval = new Audio('assets/Medieval_Warrior/grito.wav');
-var gritoMnotauro = new Audio('assets/Medieval_Warrior/grito.wav');
+var gritoMinotauro = new Audio('assets/Minotauro/minotauroGrunido.wav');
 
 function pulsado1() {
 
@@ -15,7 +15,7 @@ function pulsado1() {
 
     let boton = document.createElement("button");
     boton.id = "botonVP";
-    boton.addEventListener("click", gritar);
+    boton.addEventListener("click", gritoMedievalFuncion);
     let textoBoton = document.createTextNode("🔊");
 
 
@@ -27,8 +27,11 @@ function pulsado1() {
 
 }
 
-function gritar() {
+function gritoMedievalFuncion() {
     gritoMedieval.play();
+}
+function gritoMinorauroFuncion() {
+    gritoMinotauro.play();
 }
 
 
@@ -52,8 +55,8 @@ function pulsado2() {
 
     let boton = document.createElement("button");
     boton.id = "botonVP";
-    boton.addEventListener("click", gritar);
-    let textoBoton = document.createTextNode("uwu");
+    boton.addEventListener("click", gritoMinorauroFuncion);
+    let textoBoton = document.createTextNode("🔊");
 
 
     boton.appendChild(textoBoton);
@@ -79,7 +82,6 @@ function mana() {
 }
 
 function resetPage() {
-
 
     var divVP = document.querySelector("#vistaPrevia");
     var botonVP = document.querySelector("#botonVP");

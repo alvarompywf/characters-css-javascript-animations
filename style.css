@@ -191,9 +191,7 @@
 
 .minotauroAtacando {
 
-    zoom: 180%;
-
-
+    zoom: 360%;
     position: relative;
     height: 70px;
     width: calc(854px/9);
@@ -216,9 +214,7 @@
 }
 
 .minotauroCorriendo {
-    zoom: 180%;
-
-
+    zoom: 360%;
     position: relative;
 
     height: 70px;
@@ -249,8 +245,8 @@
 }
 
 .minotauroParado {
-    zoom: 180%;
-    margin-left: 30%;
+
+    zoom: 360%;
     position: relative;
     height: 67px;
     width: calc(474px/5);
@@ -319,7 +315,7 @@
 }
 
 #vistaPrevia {
-    
+
     margin: auto;
     padding-left: 10%;
     padding-right: 10%;
@@ -409,4 +405,12 @@
         transform: rotate(360deg);
     }
 
+}
+
+#botonVP {
+
+    border: black 1px solid;
+    padding: 5%;
+    font-size: 7px;
+    margin-top: 100%;
 }
