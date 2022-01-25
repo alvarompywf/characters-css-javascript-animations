@@ -2,6 +2,7 @@
 var gritoMedieval = new Audio('assets/Medieval_Warrior/grito.wav');
 var gritoMinotauro = new Audio('assets/Minotauro/minotauroGrunido.wav');
 
+
 function pulsado1() {
 
     resetPage();
@@ -33,6 +34,7 @@ function gritoMedievalFuncion() {
 function gritoMinorauroFuncion() {
     gritoMinotauro.play();
 }
+
 
 
 function asignarBoton() {
