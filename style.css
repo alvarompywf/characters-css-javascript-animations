@@ -54,7 +54,7 @@
 }
 
 .MedievalWarriorParado {
-    
+
     zoom: 180%;
     height: 137px;
     width: calc(1104px/6);
@@ -159,7 +159,8 @@
 
     height: 440px;
     width: 300px;
-    background-color: rgb(157, 179, 219);;
+    background-color: rgb(157, 179, 219);
+    ;
     color: rgb(255, 255, 255);
     border-radius: 10%;
     margin-left: 50%;
@@ -175,7 +176,7 @@
 }
 
 .botonMinotauro {
-    
+
     height: 30px;
     width: 300px;
     background-color: rgb(122, 114, 40);
@@ -192,7 +193,7 @@
 
     zoom: 180%;
 
-   
+
     position: relative;
     height: 70px;
     width: calc(854px/9);
@@ -217,7 +218,7 @@
 .minotauroCorriendo {
     zoom: 180%;
 
-  
+
     position: relative;
 
     height: 70px;
@@ -240,12 +241,12 @@
     }
 }
 
- .espacio{
+.espacio {
 
-    
+
     height: 100px;
 
- } 
+}
 
 .minotauroParado {
     zoom: 180%;
@@ -254,20 +255,10 @@
     height: 67px;
     width: calc(474px/5);
     background: url(assets/Minotauro/Minotauro_PARADO.png);
-    animation: MinotauroParado 0.7s steps(5) none;
-}
-
-.minotauroParado:hover {
-    zoom: 180%;
-
-
-    
-    position: relative;
-    height: 67px;
-    width: calc(474px/5);
-    background: url(assets/Minotauro/Minotauro_PARADO.png);
     animation: MinotauroParado 0.7s steps(5) infinite;
 }
+
+
 
 @keyframes MinotauroParado {
 
@@ -301,7 +292,7 @@
     height: 67px;
     width: calc(474px/5);
     background: url(assets/Minotauro/Minotauro_PARADO.png);
-    animation: MinotauroParado 0.7s steps(5) none;
+    animation: MinotauroParado 0.7s steps(5) infinite;
 }
 
 
@@ -328,7 +319,10 @@
 }
 
 #vistaPrevia {
+    
     margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
     max-height: 440px;
     max-width: 300px;
     background-color: rgb(218, 197, 171);
@@ -338,13 +332,13 @@
 
 }
 
+
 #stacks {
+
     text-align: center;
     margin: auto;
     max-height: 250px;
     max-width: 250px;
-    
-
 }
 
 /* VIDA Y MANA */

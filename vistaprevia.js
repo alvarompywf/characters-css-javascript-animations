@@ -1,15 +1,17 @@
 
 var gritoMedieval = new Audio('assets/Medieval_Warrior/grito.wav');
+var gritoMnotauro = new Audio('assets/Medieval_Warrior/grito.wav');
 
 function pulsado1() {
 
     resetPage();
 
     let cartaVP = document.querySelector("#vistaPrevia");//se obtiene vista previa
-
-    cartaVP.classList.remove();
-
+    
+    console.log(cartaVP.classList.value+"dadad") 
+    cartaVP.classList.value = "";
     cartaVP.classList.add("MedievalWarriorParado");
+    
 
     let boton = document.createElement("button");
     boton.id = "botonVP";
@@ -22,6 +24,7 @@ function pulsado1() {
 
     barraDeVida();
     mana();
+
 }
 
 function gritar() {
@@ -29,6 +32,37 @@ function gritar() {
 }
 
 
+function asignarBoton() {
+
+    let BotonGuerrero = document.querySelector(".botonGuerrero");
+    BotonGuerrero.addEventListener("click", pulsado1);
+
+}
+
+function pulsado2() {
+
+    resetPage();
+
+    let cartaVP2 = document.querySelector("#vistaPrevia");
+    console.log(cartaVP2)
+    cartaVP2.class = "";
+    console.log(cartaVP2)
+    cartaVP2.classList.add("minotauroParado");
+    console.log(cartaVP2)
+
+    let boton = document.createElement("button");
+    boton.id = "botonVP";
+    boton.addEventListener("click", gritar);
+    let textoBoton = document.createTextNode("uwu");
+
+
+    boton.appendChild(textoBoton);
+    cartaVP2.appendChild(boton);
+
+    barraDeVida();
+    mana();
+
+}
 
 function barraDeVida() {
 
@@ -38,33 +72,31 @@ function barraDeVida() {
 
 }
 function mana() {
+
     let divVida = document.getElementById("mana");
     divVida.classList.add("mana");
+
 }
 
 function resetPage() {
 
-    var divPsjs = document.querySelector("#botonVP");
 
-    if (divPsjs !== null) {
+    var divVP = document.querySelector("#vistaPrevia");
+    var botonVP = document.querySelector("#botonVP");
 
-        divPsjs.removeChild();
+    if (divVP !== null) {
+
+        divVP.classList.remove();
+        console.log("CL delete")
+    }
+    if (botonVP !== null) {
+
+        console.log("jdkahjahdjkahdjkahjkshjd")
+        divVP.removeChild(botonVP);
+        console.log("djaidjaodi")
+
 
     }
-}
-
-function asignarBoton() {
-
-    let BotonGuerrero = document.querySelector(".botonGuerrero");
-    BotonGuerrero.addEventListener("click", pulsado1);
-}
-
-function pulsado2() {
-
-    let cartaVP2 = document.querySelector("#vistaPrevia");
-    cartaVP2.classList.remove();
-    cartaVP2.classList.add("minotauroEstatico");
-
 }
 
 window.onload = asignarBoton();

@@ -21,6 +21,7 @@ function pulsarTecla(event) {
 
     if (event.keyCode === 32) {
         let divGuerrero = document.querySelector(".MedievalWarriorParado");
+        console.log(divGuerrero.classList.value)
         divGuerrero.removeAttribute("class");
         divGuerrero.classList.add("MedievalWarriorAtacando");
 
@@ -41,6 +42,7 @@ function pulsarTecla(event) {
 function soltarTecla(event) {
 
     if (event.keyCode === 32) {
+
         let divGuerrero = document.querySelector(".MedievalWarriorAtacando");
         divGuerrero.removeAttribute("class");
         divGuerrero.classList.add("MedievalWarriorParado");
@@ -62,14 +64,14 @@ function soltarTecla(event) {
 function pulsarTecla2(event) {
 
     if (event.keyCode === 38) {
-        let divMinotauro = document.querySelector(".minotauroEstatico");
+        let divMinotauro = document.querySelector(".minotauroParado");
         divMinotauro.removeAttribute("class");
         divMinotauro.classList.add("minotauroCorriendo");
     }
 
     if (event.keyCode === 13) {
         
-        let divMinotauro = document.querySelector(".minotauroEstatico");
+        let divMinotauro = document.querySelector(".minotauroParado");
         divMinotauro.removeAttribute("class");
         divMinotauro.classList.add("minotauroAtacando");
     }
@@ -80,13 +82,13 @@ function soltarTecla2(event) {
     if (event.keyCode === 38) {
         let divMinotauro = document.querySelector(".minotauroCorriendo");
         divMinotauro.removeAttribute("class");
-        divMinotauro.classList.add("minotauroEstatico");
+        divMinotauro.classList.add("minotauroParado");
     }
 
     if (event.keyCode === 13) {
         let divMinotauro = document.querySelector(".minotauroAtacando");
         divMinotauro.removeAttribute("class");
-        divMinotauro.classList.add("minotauroEstatico");
+        divMinotauro.classList.add("minotauroParado");
     }
 }
 
