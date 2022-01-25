@@ -181,6 +181,13 @@
     width: 300px;
     background-color: rgb(122, 114, 40);
     color: rgb(255, 255, 255);
+    transition: 1s;
+
+}
+.botonMinotauro:hover {
+
+    font-size: 180%;
+    transition: 1s;
 
 }
 
